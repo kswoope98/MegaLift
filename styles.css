@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2933;
+    background: #ffffff;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.site-header {
+    background: #111827;
+    padding: 18px 0;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 110px 0;
+    background: #e8eef5;
+}
+
+.eyebrow {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    max-width: 800px;
+    margin: 12px 0;
+    font-size: clamp(2.4rem, 6vw, 4.8rem);
+    line-height: 1.05;
+}
+
+.hero-text {
+    max-width: 700px;
+    margin-bottom: 30px;
+    font-size: 1.15rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 8px;
+    background: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+}
+
+.section-alt {
+    background: #f3f4f6;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.card {
+    padding: 26px;
+    border: 1px solid #d7dde5;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.site-footer {
+    padding: 30px 0;
+    background: #111827;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    .navigation {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 75px 0;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
