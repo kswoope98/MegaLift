@@ -1,0 +1,1 @@
+print("MegaLift is starting!")
