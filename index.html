@@ -24,21 +24,39 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <p class="eyebrow">South Milwaukee Digital Solutions</p>
+     <section id="home" class="hero">
+    <div class="container hero-layout">
+        <div class="hero-content">
+            <p class="eyebrow">South Milwaukee Digital Solutions</p>
 
-                <h2>Helping local businesses improve their online experience.</h2>
+            <h2>Modern websites that help local businesses stand out.</h2>
 
-                <p class="hero-text">
-                    MegaLift creates modern websites, clearer digital menus,
-                    and practical technology solutions for restaurants,
-                    bars, and other local businesses.
-                </p>
+            <p class="hero-text">
+                MegaLift helps restaurants, bars, and local businesses improve
+                their websites, digital menus, and customer experience.
+            </p>
 
+            <div class="hero-buttons">
                 <a class="button" href="#contact">Request a Website Review</a>
+                <a class="button button-secondary" href="#services">
+                    View Services
+                </a>
             </div>
-        </section>
+        </div>
+
+        <div class="hero-card">
+            <p class="hero-card-label">Website Review</p>
+            <h3>Is your website helping or hurting your business?</h3>
+
+            <ul>
+                <li>Mobile-friendly layout</li>
+                <li>Accurate hours and menus</li>
+                <li>Clear customer navigation</li>
+                <li>Modern professional design</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
         <section id="services" class="section">
             <div class="container">
@@ -72,6 +90,44 @@
             </div>
         </section>
 
+        <section id="process" class="section process-section">
+    <div class="container">
+        <p class="section-label">How it works</p>
+        <h2>A straightforward process built for busy owners</h2>
+
+        <div class="process-grid">
+            <article class="process-step">
+                <span>01</span>
+                <h3>Review</h3>
+                <p>
+                    We review your website, menu, mobile layout, business hours,
+                    and customer journey.
+                </p>
+            </article>
+
+            <article class="process-step">
+                <span>02</span>
+                <h3>Improve</h3>
+                <p>
+                    We create a cleaner design and make important information
+                    easier for customers to find.
+                </p>
+            </article>
+
+            <article class="process-step">
+                <span>03</span>
+                <h3>Maintain</h3>
+                <p>
+                    We keep menus, specials, events, hours, and links updated
+                    throughout the year.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+    </div>
+
+
         <section id="about" class="section section-alt">
             <div class="container">
                 <h2>Built for local businesses</h2>
@@ -84,20 +140,40 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Let’s improve your online presence</h2>
+       <section id="contact" class="section">
+    <div class="container contact-layout">
+        <div>
+            <p class="section-label">Start a conversation</p>
+            <h2>Let’s improve your online presence</h2>
 
-                <p>
-                    Contact MegaLift for a simple review of your website,
-                    menu, hours, links, and mobile customer experience.
-                </p>
+            <p>
+                Tell MegaLift about your business and the biggest problem with
+                your current website.
+            </p>
+        </div>
 
-                <a class="button" href="mailto:your-email@example.com">
-                    Contact MegaLift
-                </a>
-            </div>
-        </section>
+        <form class="contact-form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="business">Business name</label>
+            <input id="business" name="business" type="text" required>
+
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">How can MegaLift help?</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+            ></textarea>
+
+            <button class="button" type="submit">Request a Review</button>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer class="site-footer">

@@ -143,4 +143,151 @@ nav a:hover {
     .service-grid {
         grid-template-columns: 1fr;
     }
+    .process-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+}
+}.hero-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.button-secondary {
+    border: 2px solid #111827;
+    background: transparent;
+    color: #111827;
+}
+
+.hero-card {
+    padding: 32px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 18px 45px rgba(17, 24, 39, 0.12);
+}
+
+.hero-card-label {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-card h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+
+.hero-card ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.hero-card li {
+    margin-bottom: 8px;
+}
+
+.process-section {
+    background: #111827;
+    color: #ffffff;
+}
+
+.section-label {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.process-section h2 {
+    max-width: 700px;
+    margin-top: 0;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.process-step {
+    padding: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+}
+
+.process-step span {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.process-step h3 {
+    font-size: 1.35rem;
+}
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contact-form {
+    display: grid;
+    gap: 10px;
+    padding: 30px;
+    border: 1px solid #d7dde5;
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.contact-form label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #b8c1cc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #111827;
+    outline-offset: 2px;
+}
+
+.contact-form button {
+    border: none;
+    margin-top: 12px;
+    cursor: pointer;
 }
